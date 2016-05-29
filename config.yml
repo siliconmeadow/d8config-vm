@@ -22,8 +22,8 @@ vagrant_public_ip: ""
 vagrant_synced_folders:
   # The first synced folder will be used for the default Drupal installation, if
   # build_makefile: is 'true'.
-  - local_path: ../d8configsite
-    destination: /var/www/d8configsite
+  - local_path: ../d8config-site
+    destination: /var/www/d8config-site
     type: nfs
     create: true
 
@@ -46,7 +46,7 @@ install_site: true
 # Settings for building a Drupal site from a makefile (if 'build_makefile:'
 # is 'true').
 drupal_major_version: 8
-drupal_core_path: "/var/www/d8configsite/drupal"
+drupal_core_path: "/var/www/d8config-site/drupal"
 drupal_domain: "{{ vagrant_hostname }}"
 drupal_site_name: "Drupal"
 drupal_install_profile: standard
