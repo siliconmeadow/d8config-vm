@@ -1,3 +1,9 @@
+# A Capgemini Engineering fork of Drupal VM
+
+This is a fork of the Drupal VM repo, for use with a tutorial posted on the [Capgemini Engineering Blog](http://capgemini.github.io/).
+
+----
+
 ![Drupal VM Logo](https://raw.githubusercontent.com/geerlingguy/drupal-vm/master/docs/images/drupal-vm-logo.png)
 
 [![Build Status](https://travis-ci.org/geerlingguy/drupal-vm.svg?branch=master)](https://travis-ci.org/geerlingguy/drupal-vm) [![Documentation Status](https://readthedocs.org/projects/drupal-vm/badge/?version=latest)](http://docs.drupalvm.com)
