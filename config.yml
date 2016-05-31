@@ -28,8 +28,8 @@ vagrant_synced_folders:
     create: true
 
   # This is so the profile repo can be manipulated on the guest or host.
-  - local_path: ../d8config-profile
-    destination: /build/d8config/d8config-profile
+  - local_path: ../d8config_profile
+    destination: /build/d8config/d8config_profile
     type: nfs
     create: true
 
