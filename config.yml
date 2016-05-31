@@ -27,6 +27,12 @@ vagrant_synced_folders:
     type: nfs
     create: true
 
+  # This is so the profile repo can be manipulated on the guest or host.
+  - local_path: ../d8config-profile
+    destination: /build/d8config/d8config-profile
+    type: nfs
+    create: true
+
 # Memory and CPU to use for this VM.
 vagrant_memory: 1024
 vagrant_cpus: 2
