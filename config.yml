@@ -43,7 +43,7 @@ drupalvm_webserver: apache
 # Set this to false if you are using a different site deployment strategy and
 # would like to configure 'vagrant_synced_folders' and 'apache_vhosts' manually.
 build_makefile: true
-drush_makefile_path: "{{ config_dir }}/drupal.make.yml"
+drush_makefile_path: "/build/d8config/d8config_profile/d8config.make"
 
 # Set this to false if you don't need to install drupal (using the drupal_*
 # settings below), but instead copy down a database (e.g. using drush sql-sync).
@@ -55,8 +55,8 @@ drupal_major_version: 8
 drupal_core_path: "/var/www/d8config-site/drupal"
 drupal_domain: "{{ vagrant_hostname }}"
 drupal_site_name: "Drupal"
-drupal_install_profile: standard
-drupal_enable_modules: [ 'devel' ]
+drupal_install_profile: d8config_profile
+drupal_enable_modules: []
 drupal_account_name: admin
 drupal_account_pass: admin
 drupal_mysql_user: drupal
